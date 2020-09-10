@@ -4,9 +4,9 @@ var video = document.querySelector("#video"),
 
 button.addEventListener("click", function () {
     video.play()
-    video.setAttribute("controls", "controls");
 }, false);
 
-$(".video__play").click(function () {
-    $(".video__play").addClass('video__play-none');
+var playButton = document.getElementsByClassName("video-play-btn")[0];
+document.getElementsByClassName("video-play-btn")[0].addEventListener('click', function () {
+    playButton.classList.add('video-play-btn--hide');
 })
