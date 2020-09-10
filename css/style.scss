@@ -381,6 +381,9 @@
         &:hover .projects__latest-item {
             background-color: #362f2d;
         }
+        &:hover .projects__latest-item::before {
+            border-bottom-color: #362f2d;
+        }
         &:hover .projects__title-h3 {
             color: white;
         }
@@ -408,6 +411,15 @@
 
         &::before {
             content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            border: 20px solid transparent;
+            border-bottom: 20px solid #fbfaf8;
+            position: absolute;
+            top: 197px;
+            left: 20px;
+            transition: 0.5s;
         }
     }
     &__overlay {

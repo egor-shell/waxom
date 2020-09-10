@@ -492,6 +492,10 @@
   background-color: #362f2d;
 }
 
+.projects__latest-projects:hover .projects__latest-item::before {
+  border-bottom-color: #362f2d;
+}
+
 .projects__latest-projects:hover .projects__title-h3 {
   color: white;
 }
@@ -525,6 +529,16 @@
 
 .projects__latest-item::before {
   content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid #fbfaf8;
+  position: absolute;
+  top: 197px;
+  left: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .projects__overlay {
