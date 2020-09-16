@@ -1,0 +1,110 @@
+.projects__title-h2 {
+  text-align: center;
+  margin-top: 82px;
+}
+
+.projects__lead {
+  text-align: center;
+  max-width: 60%;
+  margin: 24px auto 40px;
+}
+
+.projects__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects__buttons-items {
+  padding: 10px 25px;
+  background: none;
+  margin-right: 10px;
+  outline: none;
+}
+
+.projects__buttons-items:last-child {
+  margin-right: 0;
+}
+
+.projects__latest-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.projects__latest-projects {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.projects__latest-upper-block {
+  position: relative;
+}
+
+.projects__figure-img {
+  margin-bottom: -4px;
+}
+
+.projects__latest-item {
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
+}
+
+.projects__overlay {
+  position: absolute;
+  background-color: rgba(17, 17, 17, 0.7);
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__overlay-zoom {
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.projects__overlay-link {
+  opacity: 0;
+}
+
+.projects__overlay-zoom {
+  opacity: 0;
+}
+
+.projects__more {
+  padding: 15px 45px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1140px) {
+  .projects__latest-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

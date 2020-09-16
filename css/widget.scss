@@ -1,0 +1,74 @@
+.widget {
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-bottom: 85px;
+    }
+    &__about {
+        max-width: 20%;
+        &-logo {
+            display: flex;
+            align-items: center;
+        }
+        &-waxom {
+            max-width: 100%;
+        }
+        &-img {
+            max-width: 100%;
+        }
+        &-link {
+            text-decoration: none;
+        }
+    }
+    &__posts {
+        max-width: 20%;
+        padding-top: 27px;
+
+        &-item {
+            padding-bottom: 24px;
+            margin-top: 20px;
+            border-bottom: 1px solid #252525;
+
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+        &-link {
+            margin-top: 10px;
+            text-decoration: none;
+        }
+    }
+    &__twitter {
+        max-width: 20%;
+        padding-top: 27px;
+        &-post {
+            padding-bottom: 24px;
+            border-bottom: 1px solid #252525;
+            margin-top: 20px;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+    &__dribbble {
+        max-width: 20%;
+        padding-top: 27px;
+        &-block {
+            display: flex;
+        }
+        &-img {
+            max-width: 45%;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        &-img:nth-child(2) {
+            margin-right: none;
+        }
+        &-img:nth-child(4) {
+            margin-right: none;
+        }
+    }
+}

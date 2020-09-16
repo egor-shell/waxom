@@ -1,0 +1,43 @@
+.realization {
+  background: #fbfaf8;
+}
+
+.realization__title-h2 {
+  text-align: center;
+  margin-top: 85px;
+}
+
+.realization__lead {
+  max-width: 60%;
+  text-align: center;
+  margin: 24px auto 40px;
+}
+
+.realization__screen {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.realization__img-center {
+  z-index: 3;
+}
+
+.realization__img-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.realization__img-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+/*# sourceMappingURL=realization.css.map */

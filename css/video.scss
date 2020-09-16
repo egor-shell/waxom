@@ -1,0 +1,31 @@
+.video {
+    &__container {
+        margin-top: 80px;
+        max-height: 705px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        &-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+        }
+    }
+    &-play-btn {
+        cursor: pointer;
+    }
+    &__title-h2 {
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+    &__text {
+        max-width: 60%;
+        text-align: center;
+        margin-bottom: 43px;
+    }
+}

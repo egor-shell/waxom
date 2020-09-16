@@ -1,0 +1,38 @@
+.mobile__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile__container-text {
+  max-width: 57%;
+}
+
+.mobile__container-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile__title-h2 {
+  margin-bottom: 40px;
+}
+
+.mobile__lead {
+  margin-bottom: 50px;
+}
+
+.mobile__tags {
+  padding: 0;
+}
+/*# sourceMappingURL=mobile.css.map */

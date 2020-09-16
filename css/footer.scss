@@ -1,0 +1,26 @@
+.footer {
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__copyright {
+        display: flex;
+        align-items: center;
+        margin: 49px 0;
+
+        &-link {
+            &-bor {
+                margin-left: 12px;
+                border-right: 1px solid #252525;
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    &__design {
+        display: flex;
+        align-items: center;
+    }
+}

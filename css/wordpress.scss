@@ -1,0 +1,21 @@
+.wordpress {
+    background: -moz-linear-gradient(90deg, rgba(33, 27, 25, 1) 0%, rgba(78, 52, 39, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(33, 27, 25, 1) 0%, rgba(78, 52, 39, 1) 100%);
+    background: linear-gradient(90deg, rgba(33, 27, 25, 1) 0%, rgba(78, 52, 39, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#211b19",endColorstr="#4e3427",GradientType=1);
+
+    &__container {
+        padding: 50px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__theme {
+        display: flex;
+        align-items: flex-end;
+
+        &-waxom {
+            margin-right: 10px;
+        }
+    }
+}

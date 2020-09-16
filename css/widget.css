@@ -1,0 +1,97 @@
+.widget-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
+
+.widget__about {
+  max-width: 20%;
+}
+
+.widget__about-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.widget__about-waxom {
+  max-width: 100%;
+}
+
+.widget__about-img {
+  max-width: 100%;
+}
+
+.widget__about-link {
+  text-decoration: none;
+}
+
+.widget__posts {
+  max-width: 20%;
+  padding-top: 27px;
+}
+
+.widget__posts-item {
+  padding-bottom: 24px;
+  margin-top: 20px;
+  border-bottom: 1px solid #252525;
+}
+
+.widget__posts-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.widget__posts-link {
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.widget__twitter {
+  max-width: 20%;
+  padding-top: 27px;
+}
+
+.widget__twitter-post {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #252525;
+  margin-top: 20px;
+}
+
+.widget__twitter-post:last-child {
+  border: none;
+}
+
+.widget__dribbble {
+  max-width: 20%;
+  padding-top: 27px;
+}
+
+.widget__dribbble-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.widget__dribbble-img {
+  max-width: 45%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.widget__dribbble-img:nth-child(2) {
+  margin-right: none;
+}
+
+.widget__dribbble-img:nth-child(4) {
+  margin-right: none;
+}
+/*# sourceMappingURL=widget.css.map */

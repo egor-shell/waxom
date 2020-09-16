@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Waxom</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main class="main">
         <section class="home">
-            <div class="container home__container-nav">
+            <div class="home__container-all">
                 <nav class="home__nav">
                     <a href="#" class="home__nav-left-menu">
                         <svg class="home__nav-logo" xmlns="http://www.w3.org/2000/svg"
@@ -22,24 +22,31 @@
                         <p class="home__nav-text">Waxom</p>
                     </a>
                     <div class="home__nav-right-menu">
-                        <input type="checkbox" id="check-menu">
-                        <label for="check-menu" class="home__nav-burger">
-                            <div class="home__nav-burger-line first"></div>
-                            <div class="home__nav-burger-line second"></div>
-                            <div class="home__nav-burger-line third"></div>
-                            <div class="home__nav-burger-line fourth"></div>
-                        </label>
-                        <ul class="home__nav-links">
-                            <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Home</a></li>
-                            <li class="home__nav-links-item"><a href="" class="home__nav-links-link">About Us</a></li>
-                            <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Portfolio</a></li>
-                            <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Features</a></li>
-                            <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Blog</a></li>
-                            <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Pricing</a></li>
-                            <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Shortcodes</a>
-                            </li>
-                            <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Contact</a></li>
-                        </ul>
+                        <div class="home__nav-right-header">
+                            <input type="checkbox" id="check-menu" class="home__nav-inp">
+                            <label for="check-menu" class="home__nav-btn home__nav-burger-block">
+                                <span class="home__nav-burger-line first"></span>
+                                <span class="home__nav-burger-line second"></span>
+                                <span class="home__nav-burger-line third"></span>
+                                <span class="home__nav-burger-line fourth"></span>
+                            </label>
+                            <ul class="home__nav-links">
+                                <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Home</a></li>
+                                <li class="home__nav-links-item"><a href="" class="home__nav-links-link">About Us</a>
+                                </li>
+                                <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Portfolio</a>
+                                </li>
+                                <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Features</a>
+                                </li>
+                                <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Blog</a></li>
+                                <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Pricing</a>
+                                </li>
+                                <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Shortcodes</a>
+                                </li>
+                                <li class="home__nav-links-item"><a href="" class="home__nav-links-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                         <a href="#" class="home__nav-btn">
                             <svg class="home__nav-basket" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="24px">
@@ -47,38 +54,47 @@
                                     d="M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.652,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.652,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.824,22.494 14.995,22.494 L3.002,22.494 C2.174,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.174,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z" />
                             </svg>
                         </a>
-                        <a href="#" class="home__nav-btn">
-                            <svg class="home__nav-search" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
-                                <path
-                                    d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z" />
-                            </svg>
-                        </a>
+                        <form action="#" class="home__nav-btn home__nav-search-form">
+                            <input class="home__nav-search-field" id="field" type="search">
+                            <label for="field">
+                                <svg class="home__nav-search" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
+                                    <path
+                                        d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z" />
+                                </svg>
+                            </label>
+                        </form>
+                        <div class="home__nav-burger">
+                        </div>
+                        <div class="home__nav-btn-block">
+
+                        </div>
                     </div>
                 </nav>
-            </div>
-            <div class="home__container">
-                <div class="home__container-text">
-                    <button class="home__btn">
-                        <svg class="home__btn-arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="72.938">
-                            <path d="M188.026 547.979L150.005 511.5l38.021-36.48 1.969 2-35.929 34.48L190 545.977z"
-                                transform="translate(-150 -475.031)" />
-                        </svg>
-                    </button>
-                    <div class="home__text">
-                        <h2 class="home__text-title-h2">Unique and Modern Design</h2>
-                        <h1 class="home__text-title-h1">Portfolio PSD Template</h1>
-                        <p class="home__text-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil
-                            imperdiet
-                            doming id
-                            quod mazim placerat facer possim assum</p>
+                <div class="home__container">
+                    <div class="home__container-text">
+                        <button class="home__btn">
+                            <svg class="home__btn-arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="72.938">
+                                <path d="M188.026 547.979L150.005 511.5l38.021-36.48 1.969 2-35.929 34.48L190 545.977z"
+                                    transform="translate(-150 -475.031)" />
+                            </svg>
+                        </button>
+                        <div class="home__text">
+                            <h2 class="home__text-title-h2">Unique and Modern Design</h2>
+                            <h1 class="home__text-title-h1">Portfolio PSD Template</h1>
+                            <p class="home__text-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil
+                                imperdiet
+                                doming id
+                                quod mazim placerat facer possim assum</p>
+                            <button class="home__text-btn">GET STARTED</button>
+                        </div>
+                        <button class="home__btn">
+                            <svg class="home__btn-arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="72.938">
+                                <path d="M1731.97 547.979L1770 511.5l-38.03-36.48-1.97 2 35.93 34.476-35.93 34.481z"
+                                    transform="translate(-1730 -475.031)" />
+                            </svg>
+                        </button>
                     </div>
-                    <button class="home__btn">
-                        <svg class="home__btn-arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="72.938">
-                            <path d="M1731.97 547.979L1770 511.5l-38.03-36.48-1.97 2 35.93 34.476-35.93 34.481z"
-                                transform="translate(-1730 -475.031)" />
-                        </svg>
-                    </button>
                 </div>
                 <div class="home__btn-menu">
                     <button class="home__btn-item"></button>
@@ -94,16 +110,9 @@
                 <div class="services__info">
                     <div class="services__img-container">
                         <svg class="services__img" xmlns="http://www.w3.org/2000/svg" width="47.594" height="47.59">
-                            <defs>
-                                <filter id="web" x="487.531" y="1104.88" width="47.594" height="47.59"
-                                    filterUnits="userSpaceOnUse">
-                                    <feComposite result="composite" operator="in" in2="SourceGraphic" />
-                                    <feBlend result="blend" in2="SourceGraphic" />
-                                </filter>
-                            </defs>
                             <path
                                 d="M534.668 1121.47a1.591 1.591 0 00-2.248 0l-13.847 13.84-19.467 8.58-3-3 8.576-19.47 13.844-13.84a1.59 1.59 0 00-2.248-2.25l-14.268 14.26-14.477 32.87 32.868-14.47 14.266-14.27a1.592 1.592 0 00.001-2.25zm-20.173 11a1.606 1.606 0 002.25 0l13.332-13.34a1.591 1.591 0 00-2.25-2.25l-13.327 13.34a1.593 1.593 0 000 2.25zm-3.48-3.48a1.606 1.606 0 002.25 0l13.333-13.34a1.591 1.591 0 00-2.25-2.25l-13.333 13.33a1.6 1.6 0 000 2.26zm-3.481-3.49a1.581 1.581 0 002.25 0l13.333-13.33a1.591 1.591 0 00-2.25-2.25l-13.333 13.33a1.593 1.593 0 000 2.25z"
-                                transform="translate(-487.531 -1104.88)" fill-rule="evenodd" filter="url(#web)" />
+                                transform="translate(-487.531 -1104.88)" />
                         </svg>
                     </div>
                     <h3 class="services__title-h3">Web & App Design</h3>
@@ -209,8 +218,8 @@
                 <div class="wordpress__container">
                     <div class="wordpress__text">
                         <div class="wordpress__theme">
-                            <p class="wordpress__waxom">Waxom</p>
-                            <h3 class="wordpress__title-h3">Multipurpose WordPress Theme</h3>
+                            <p class="wordpress__theme-waxom">Waxom</p>
+                            <h3 class="wordpress__theme-title-h3">Multipurpose WordPress Theme</h3>
                         </div>
                         <p class="wordpress__lead">Don't Forget to Rate the Template. Thanks so much!</p>
                     </div>
@@ -233,25 +242,29 @@
                 </div>
                 <div class="projects__latest-container">
                     <figure class="projects__latest-projects">
-                        <img src="img/figure001.jpg" alt="" class="projects__figure-img">
-                        <div class="projects__overlay">
-                            <a href="#" class="projects__overlay-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="24.624" height="24.62" viewBox="0 0 24.624 24.62">
-                                    <path class="cls-1"
-                                        d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
-                                        transform="translate(-920.688 -2641.72)" />
-                                </svg>
-                            </a>
-                            <button class="projects__overlay-zoom">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="25.157" height="24.47" viewBox="0 0 25.157 24.47">
-                                    <path class="cls-1"
-                                        d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
-                                        transform="translate(-974.781 -2641.19)" />
-                                </svg>
+                        <div class="projects__latest-upper-block">
+                            <img src="img/figure001.jpg" alt="" class="projects__figure-img">
+                            <div class="projects__overlay">
+                                <a href="#" class="projects__overlay-link">
+                                    <svg class="projects__img-link" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24.624" height="24.62"
+                                        viewBox="0 0 24.624 24.62">
+                                        <path class="cls-1"
+                                            d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
+                                            transform="translate(-920.688 -2641.72)" />
+                                    </svg>
+                                </a>
+                                <button class="projects__overlay-zoom">
+                                    <svg class="projects__img-zoom" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47"
+                                        viewBox="0 0 25.157 24.47">
+                                        <path class="cls-1"
+                                            d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
+                                            transform="translate(-974.781 -2641.19)" />
+                                    </svg>
 
-                            </button>
+                                </button>
+                            </div>
                         </div>
                         <figcaption class="projects__latest-item">
                             <h3 class="projects__title-h3">Claritas Etiam Processus</h3>
@@ -259,133 +272,150 @@
                         </figcaption>
                     </figure>
                     <figure class="projects__latest-projects">
-                        <img src="img/figure002.jpg" alt="" class="projects__figure-img">
-                        <div class="projects__overlay">
-                            <a href="#" class="projects__overlay-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="24.624" height="24.62" viewBox="0 0 24.624 24.62">
-                                    <path class="cls-1"
-                                        d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
-                                        transform="translate(-920.688 -2641.72)" />
-                                </svg>
-                            </a>
-                            <button class="projects__overlay-zoom">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="25.157" height="24.47" viewBox="0 0 25.157 24.47">
-                                    <path class="cls-1"
-                                        d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
-                                        transform="translate(-974.781 -2641.19)" />
-                                </svg>
+                        <div class="projects__latest-upper-block">
+                            <img src="img/figure002.jpg" alt="" class="projects__figure-img">
+                            <div class="projects__overlay">
+                                <a href="#" class="projects__overlay-link">
+                                    <svg class="projects__img-link" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24.624" height="24.62"
+                                        viewBox="0 0 24.624 24.62">
+                                        <path class="cls-1"
+                                            d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
+                                            transform="translate(-920.688 -2641.72)" />
+                                    </svg>
+                                </a>
+                                <button class="projects__overlay-zoom">
+                                    <svg class="projects__img-zoom" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47"
+                                        viewBox="0 0 25.157 24.47">
+                                        <path class="cls-1"
+                                            d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
+                                            transform="translate(-974.781 -2641.19)" />
+                                    </svg>
 
-                            </button>
+                                </button>
+                            </div>
                         </div>
-
                         <figcaption class="projects__latest-item">
                             <h3 class="projects__title-h3">Quam Nutamus Farum</h3>
                             <p class="projects__sign">Graphic Design, Mock-Up</p>
                         </figcaption>
                     </figure>
                     <figure class="projects__latest-projects">
-                        <img src="img/figure003.jpg" alt="" class="projects__figure-img">
-                        <div class="projects__overlay">
-                            <a href="#" class="projects__overlay-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="24.624" height="24.62" viewBox="0 0 24.624 24.62">
-                                    <path class="cls-1"
-                                        d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
-                                        transform="translate(-920.688 -2641.72)" />
-                                </svg>
-                            </a>
-                            <button class="projects__overlay-zoom">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="25.157" height="24.47" viewBox="0 0 25.157 24.47">
-                                    <path class="cls-1"
-                                        d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
-                                        transform="translate(-974.781 -2641.19)" />
-                                </svg>
-                            </button>
-                        </div>
+                        <div class="projects__latest-upper-block">
+                            <img src="img/figure003.jpg" alt="" class="projects__figure-img">
+                            <div class="projects__overlay">
+                                <a href="#" class="projects__overlay-link">
+                                    <svg class="projects__img-link" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24.624" height="24.62"
+                                        viewBox="0 0 24.624 24.62">
+                                        <path class="cls-1"
+                                            d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
+                                            transform="translate(-920.688 -2641.72)" />
+                                    </svg>
+                                </a>
+                                <button class="projects__overlay-zoom">
+                                    <svg class="projects__img-zoom" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47"
+                                        viewBox="0 0 25.157 24.47">
+                                        <path class="cls-1"
+                                            d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
+                                            transform="translate(-974.781 -2641.19)" />
+                                    </svg>
 
+                                </button>
+                            </div>
+                        </div>
                         <figcaption class="projects__latest-item">
                             <h3 class="projects__title-h3">Usus Legentis Videntur</h3>
                             <p class="projects__sign">Photography, Holiday</p>
                         </figcaption>
                     </figure>
                     <figure class="projects__latest-projects">
-                        <img src="img/figure004.jpg" alt="" class="projects__figure-img">
-                        <div class="projects__overlay">
-                            <a href="#" class="projects__overlay-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="24.624" height="24.62" viewBox="0 0 24.624 24.62">
-                                    <path class="cls-1"
-                                        d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
-                                        transform="translate(-920.688 -2641.72)" />
-                                </svg>
-                            </a>
-                            <button class="projects__overlay-zoom">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="25.157" height="24.47" viewBox="0 0 25.157 24.47">
-                                    <path class="cls-1"
-                                        d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
-                                        transform="translate(-974.781 -2641.19)" />
-                                </svg>
-                            </button>
-                        </div>
+                        <div class="projects__latest-upper-block">
+                            <img src="img/figure004.jpg" alt="" class="projects__figure-img">
+                            <div class="projects__overlay">
+                                <a href="#" class="projects__overlay-link">
+                                    <svg class="projects__img-link" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24.624" height="24.62"
+                                        viewBox="0 0 24.624 24.62">
+                                        <path class="cls-1"
+                                            d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
+                                            transform="translate(-920.688 -2641.72)" />
+                                    </svg>
+                                </a>
+                                <button class="projects__overlay-zoom">
+                                    <svg class="projects__img-zoom" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47"
+                                        viewBox="0 0 25.157 24.47">
+                                        <path class="cls-1"
+                                            d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
+                                            transform="translate(-974.781 -2641.19)" />
+                                    </svg>
 
+                                </button>
+                            </div>
+                        </div>
                         <figcaption class="projects__latest-item">
                             <h3 class="projects__title-h3">Claritas Etiam Processus</h3>
                             <p class="projects__sign">Photography, Nature</p>
                         </figcaption>
                     </figure>
                     <figure class="projects__latest-projects">
-                        <img src="img/figure005.jpg" alt="" class="projects__figure-img">
-                        <div class="projects__overlay">
-                            <a href="#" class="projects__overlay-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="24.624" height="24.62" viewBox="0 0 24.624 24.62">
-                                    <path class="cls-1"
-                                        d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
-                                        transform="translate(-920.688 -2641.72)" />
-                                </svg>
-                            </a>
-                            <button class="projects__overlay-zoom">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="25.157" height="24.47" viewBox="0 0 25.157 24.47">
-                                    <path class="cls-1"
-                                        d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
-                                        transform="translate(-974.781 -2641.19)" />
-                                </svg>
+                        <div class="projects__latest-upper-block">
+                            <img src="img/figure005.jpg" alt="" class="projects__figure-img">
+                            <div class="projects__overlay">
+                                <a href="#" class="projects__overlay-link">
+                                    <svg class="projects__img-link" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24.624" height="24.62"
+                                        viewBox="0 0 24.624 24.62">
+                                        <path class="cls-1"
+                                            d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
+                                            transform="translate(-920.688 -2641.72)" />
+                                    </svg>
+                                </a>
+                                <button class="projects__overlay-zoom">
+                                    <svg class="projects__img-zoom" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47"
+                                        viewBox="0 0 25.157 24.47">
+                                        <path class="cls-1"
+                                            d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
+                                            transform="translate(-974.781 -2641.19)" />
+                                    </svg>
 
-                            </button>
+                                </button>
+                            </div>
                         </div>
-
                         <figcaption class="projects__latest-item">
                             <h3 class="projects__title-h3">Quam Nutamus Farum</h3>
                             <p class="projects__sign">Graphic Design, Mock-Up</p>
                         </figcaption>
                     </figure>
                     <figure class="projects__latest-projects">
-                        <img src="img/figure006.jpg" alt="" class="projects__figure-img">
-                        <div class="projects__overlay">
-                            <a href="#" class="projects__overlay-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="24.624" height="24.62" viewBox="0 0 24.624 24.62">
-                                    <path class="cls-1"
-                                        d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
-                                        transform="translate(-920.688 -2641.72)" />
-                                </svg>
-                            </a>
-                            <button class="projects__overlay-zoom">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="25.157" height="24.47" viewBox="0 0 25.157 24.47">
-                                    <path class="cls-1"
-                                        d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
-                                        transform="translate(-974.781 -2641.19)" />
-                                </svg>
+                        <div class="projects__latest-upper-block">
+                            <img src="img/figure006.jpg" alt="" class="projects__figure-img">
+                            <div class="projects__overlay">
+                                <a href="#" class="projects__overlay-link">
+                                    <svg class="projects__img-link" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24.624" height="24.62"
+                                        viewBox="0 0 24.624 24.62">
+                                        <path class="cls-1"
+                                            d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z"
+                                            transform="translate(-920.688 -2641.72)" />
+                                    </svg>
+                                </a>
+                                <button class="projects__overlay-zoom">
+                                    <svg class="projects__img-zoom" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47"
+                                        viewBox="0 0 25.157 24.47">
+                                        <path class="cls-1"
+                                            d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z"
+                                            transform="translate(-974.781 -2641.19)" />
+                                    </svg>
 
-                            </button>
+                                </button>
+                            </div>
                         </div>
-
                         <figcaption class="projects__latest-item">
                             <h3 class="projects__title-h3">Usus Legentis Videntur</h3>
                             <p class="projects__sign">Photography, Holiday</p>
@@ -413,7 +443,7 @@
                         saepius,
                         qui sequitur mutationem consuetudium.</p>
                     <p class="video__time">03:26</p>
-                    <script src="/script/video-script.js"></script>
+                    <script src="script/video-script.js"></script>
                 </div>
             </div>
         </section>
@@ -609,17 +639,17 @@
                     </div>
                 </div>
                 <div class="recent__button">
-                    <button class="recent__button-page"><svg xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="21.969" height="21.97"
-                            viewBox="0 0 21.969 21.97">
+                    <button class="recent__button-page"><svg class="recent__button-img"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.969"
+                            height="21.97" viewBox="0 0 21.969 21.97">
                             <path
                                 d="M942.583,5770.43l4.772-4.77a0.735,0.735,0,0,1,1.04,1.04l-4.254,4.26,4.254,4.25a0.735,0.735,0,0,1-1.04,1.04l-4.772-4.77a0.731,0.731,0,0,1-.216-0.52A0.759,0.759,0,0,1,942.583,5770.43Zm3.4-10.4A10.98,10.98,0,1,1,935,5771.01,10.979,10.979,0,0,1,945.987,5760.03Zm0,20.49a9.51,9.51,0,1,0-9.512-9.51A9.526,9.526,0,0,0,945.987,5780.52Z"
                                 transform="translate(-935 -5760.03)" />
                         </svg>
                     </button>
-                    <button class="recent__button-page"><svg xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="21.969" height="21.97"
-                            viewBox="0 0 21.969 21.97">
+                    <button class="recent__button-page"><svg class="recent__button-img"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.969"
+                            height="21.97" viewBox="0 0 21.969 21.97">
                             <path
                                 d="M979.417,5770.43l-4.772-4.77a0.735,0.735,0,0,0-1.04,1.04l4.254,4.26-4.254,4.25a0.735,0.735,0,0,0,1.04,1.04l4.772-4.77a0.731,0.731,0,0,0,.216-0.52A0.759,0.759,0,0,0,979.417,5770.43Zm-3.405-10.4A10.98,10.98,0,1,0,987,5771.01,10.978,10.978,0,0,0,976.012,5760.03Zm0,20.49a9.51,9.51,0,1,1,9.513-9.51A9.526,9.526,0,0,1,976.012,5780.52Z"
                                 transform="translate(-965.031 -5760.03)" />
@@ -657,7 +687,7 @@
                             class="widget__about-icon">&#x25b8;</span></a>
                 </div>
                 <div class="widget__posts">
-                    <h3 class="widget__posts-title-h3">Recent Posts</h3>
+                    <h3 class="widget__title-h3">Recent Posts</h3>
                     <div class="widget__posts-item">
                         <p class="widget__posts-data">September 08, 2015</p>
                         <a href="#" class="widget__posts-link">Lorem ipsum dolor sit amet, consec-<wbr> tetuer adipiscing
@@ -676,7 +706,7 @@
                     </div>
                 </div>
                 <div class="widget__twitter">
-                    <h3 class="widget__twitter-title-h3">Our Twitter</h3>
+                    <h3 class="widget__title-h3">Our Twitter</h3>
                     <div class="widget__twitter-post">
                         <p class="widget__twitter-text"><a href="#" class="widget__twitter-link">@waxom</a> Cum soluta
                             nobis
@@ -699,7 +729,7 @@
                     </div>
                 </div>
                 <div class="widget__dribbble">
-                    <h3 class="widget__dribbble-title-h3">Dribbble Widget</h3>
+                    <h3 class="widget__title-h3">Dribbble Widget</h3>
                     <div class="widget__dribbble-block">
                         <img src="img/dribbble_01.jpg" alt="" class="widget__dribbble-img">
                         <img src="img/dribbble_02.jpg" alt="" class="widget__dribbble-img">

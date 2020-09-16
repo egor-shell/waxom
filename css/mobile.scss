@@ -1,0 +1,25 @@
+.mobile {
+    &__container {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        justify-content: center;
+
+        &-text {
+            max-width: 57%;
+        }
+        &-tags {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__title-h2 {
+        margin-bottom: 40px;
+    }
+    &__lead {
+        margin-bottom: 50px;
+    }
+    &__tags {
+        padding: 0;
+    }
+}

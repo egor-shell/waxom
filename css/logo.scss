@@ -1,0 +1,15 @@
+.logo {
+    background-image: url(../img/logo-bg.jpg);
+    background-size: auto, auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__img {
+        margin-top: 140px;
+        margin-bottom: 139px;
+    }
+}
